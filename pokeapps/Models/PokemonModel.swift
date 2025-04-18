@@ -19,8 +19,3 @@ struct PokemonEntity: Codable {
     let url: String?
 }
 
-enum PokemonType {
-    case mypokemon
-    case alllistpokemon
-}
-

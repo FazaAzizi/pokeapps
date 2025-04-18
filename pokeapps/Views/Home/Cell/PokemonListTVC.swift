@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PokemonListTableViewCell: UITableViewCell {
+class PokemonListTVC: UITableViewCell {
 
     @IBOutlet weak var containerVw: UIView!
     @IBOutlet weak var containerImageVw: UIView!
@@ -16,7 +16,7 @@ class PokemonListTableViewCell: UITableViewCell {
     @IBOutlet weak var containerTypeVw: UIView!
     @IBOutlet weak var typeLbl: UILabel!
     
-    static let identifier = String(describing: PokemonListTableViewCell.self)
+    static let identifier = String(describing: PokemonListTVC.self)
     
     static let nib = {
        UINib(nibName: identifier, bundle: nil)
@@ -35,7 +35,7 @@ class PokemonListTableViewCell: UITableViewCell {
     
 }
 
-extension PokemonListTableViewCell {
+extension PokemonListTVC {
     func configureCell(data: PokemonDetail) {
         nameLbl.text = data.name
         typeLbl.text = data.types?.compactMap { $0.type?.name }.joined(separator: ", ")
@@ -44,5 +44,6 @@ extension PokemonListTableViewCell {
         if let img = data.sprites?.frontDefault {
             pokemonImgVw.loadImageUrl(img)
         }
+        
     }
 }

@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
@@ -41,7 +42,7 @@ extension HomeViewController {
     }
     
     private func setupTableView() {
-        tableView.register(PokemonListTableViewCell.nib, forCellReuseIdentifier: PokemonListTableViewCell.identifier)
+        tableView.register(PokemonListTVC.nib, forCellReuseIdentifier: PokemonListTVC.identifier)
         tableView.delegate = self
         tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
     }
@@ -73,7 +74,7 @@ extension HomeViewController {
             .disposed(by: disposeBag)
         
         viewModel.filteredPokemonList
-            .bind(to: tableView.rx.items(cellIdentifier: PokemonListTableViewCell.identifier, cellType: PokemonListTableViewCell.self)) { (row, pokemon, cell) in
+            .bind(to: tableView.rx.items(cellIdentifier: PokemonListTVC.identifier, cellType: PokemonListTVC.self)) { (row, pokemon, cell) in
                 cell.configureCell(data: pokemon)
             }
             .disposed(by: disposeBag)
@@ -81,9 +82,9 @@ extension HomeViewController {
         tableView.rx.modelSelected(PokemonDetail.self)
             .subscribe(onNext: { [weak self] pokemon in
                 guard let self = self else { return }
-//                let detailVC = PokemonDetailViewController(nibName: "PokemonDetailViewController", bundle: nil)
-//                detailVC.pokemonId = pokemon.id ?? 0
-//                self.navigationController?.pushViewController(detailVC, animated: true)
+                let detailVC = PokemonDetailViewController()
+                detailVC.viewModel = PokemonDetailViewModel(pokemonDetail: pokemon)
+                self.navigationController?.pushViewController(detailVC, animated: true)
             })
             .disposed(by: disposeBag)
         

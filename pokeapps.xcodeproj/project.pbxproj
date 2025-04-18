@@ -18,8 +18,8 @@
 		A7D0F4542DB28F1D00124DD3 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4532DB28F1D00124DD3 /* HomeViewModel.swift */; };
 		A7D0F4562DB28F8200124DD3 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4552DB28F8200124DD3 /* PokemonModel.swift */; };
 		A7D0F4582DB28F9800124DD3 /* PokemonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4572DB28F9800124DD3 /* PokemonDetailModel.swift */; };
-		A7D0F45C2DB28FC100124DD3 /* PokemonListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F45A2DB28FC100124DD3 /* PokemonListTableViewCell.swift */; };
-		A7D0F45D2DB28FC100124DD3 /* PokemonListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F45B2DB28FC100124DD3 /* PokemonListTableViewCell.xib */; };
+		A7D0F45C2DB28FC100124DD3 /* PokemonListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F45A2DB28FC100124DD3 /* PokemonListTVC.swift */; };
+		A7D0F45D2DB28FC100124DD3 /* PokemonListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F45B2DB28FC100124DD3 /* PokemonListTVC.xib */; };
 		A7D0F4602DB2915E00124DD3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F45E2DB2915E00124DD3 /* NetworkManager.swift */; };
 		A7D0F4612DB2915E00124DD3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F45F2DB2915E00124DD3 /* Constants.swift */; };
 		A7D0F4642DB291A400124DD3 /* PokemonServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4632DB291A400124DD3 /* PokemonServiceProtocol.swift */; };
@@ -30,6 +30,17 @@
 		A7D0F4732DB29E0D00124DD3 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4712DB29E0D00124DD3 /* ProfileViewController.xib */; };
 		A7D0F4762DB2A58700124DD3 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4742DB2A58700124DD3 /* MainTabBarController.swift */; };
 		A7D0F4772DB2A58700124DD3 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4752DB2A58700124DD3 /* MainTabBarController.xib */; };
+		A7D0F47C2DB2ADC600124DD3 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F47A2DB2ADC600124DD3 /* PokemonDetailViewController.swift */; };
+		A7D0F47D2DB2ADC600124DD3 /* PokemonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F47B2DB2ADC600124DD3 /* PokemonDetailViewController.xib */; };
+		A7D0F47F2DB2ADD500124DD3 /* PokemonDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F47E2DB2ADD500124DD3 /* PokemonDetailViewModel.swift */; };
+		A7D0F48C2DB2AFFF00124DD3 /* MoveTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4812DB2AFFF00124DD3 /* MoveTVC.xib */; };
+		A7D0F48D2DB2AFFF00124DD3 /* MoveTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4822DB2AFFF00124DD3 /* MoveTVC.swift */; };
+		A7D0F48E2DB2AFFF00124DD3 /* PopupMovesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4842DB2AFFF00124DD3 /* PopupMovesView.xib */; };
+		A7D0F48F2DB2AFFF00124DD3 /* PopupMovesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4852DB2AFFF00124DD3 /* PopupMovesView.swift */; };
+		A7D0F4902DB2AFFF00124DD3 /* StatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4872DB2AFFF00124DD3 /* StatTVC.xib */; };
+		A7D0F4912DB2AFFF00124DD3 /* StatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4882DB2AFFF00124DD3 /* StatTVC.swift */; };
+		A7D0F4922DB2AFFF00124DD3 /* TypeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F48A2DB2AFFF00124DD3 /* TypeTVC.xib */; };
+		A7D0F4932DB2AFFF00124DD3 /* TypeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F48B2DB2AFFF00124DD3 /* TypeTVC.swift */; };
 		B7DCB7CAF4DD017AA9E6131D /* Pods_pokeapps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF6607ED659EC31527EB0F9 /* Pods_pokeapps.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +61,8 @@
 		A7D0F4532DB28F1D00124DD3 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A7D0F4552DB28F8200124DD3 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		A7D0F4572DB28F9800124DD3 /* PokemonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailModel.swift; sourceTree = "<group>"; };
-		A7D0F45A2DB28FC100124DD3 /* PokemonListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListTableViewCell.swift; sourceTree = "<group>"; };
-		A7D0F45B2DB28FC100124DD3 /* PokemonListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonListTableViewCell.xib; sourceTree = "<group>"; };
+		A7D0F45A2DB28FC100124DD3 /* PokemonListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListTVC.swift; sourceTree = "<group>"; };
+		A7D0F45B2DB28FC100124DD3 /* PokemonListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonListTVC.xib; sourceTree = "<group>"; };
 		A7D0F45E2DB2915E00124DD3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A7D0F45F2DB2915E00124DD3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A7D0F4632DB291A400124DD3 /* PokemonServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonServiceProtocol.swift; sourceTree = "<group>"; };
@@ -62,6 +73,17 @@
 		A7D0F4712DB29E0D00124DD3 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		A7D0F4742DB2A58700124DD3 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A7D0F4752DB2A58700124DD3 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		A7D0F47A2DB2ADC600124DD3 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
+		A7D0F47B2DB2ADC600124DD3 /* PokemonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonDetailViewController.xib; sourceTree = "<group>"; };
+		A7D0F47E2DB2ADD500124DD3 /* PokemonDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewModel.swift; sourceTree = "<group>"; };
+		A7D0F4812DB2AFFF00124DD3 /* MoveTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoveTVC.xib; sourceTree = "<group>"; };
+		A7D0F4822DB2AFFF00124DD3 /* MoveTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveTVC.swift; sourceTree = "<group>"; };
+		A7D0F4842DB2AFFF00124DD3 /* PopupMovesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupMovesView.xib; sourceTree = "<group>"; };
+		A7D0F4852DB2AFFF00124DD3 /* PopupMovesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupMovesView.swift; sourceTree = "<group>"; };
+		A7D0F4872DB2AFFF00124DD3 /* StatTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatTVC.xib; sourceTree = "<group>"; };
+		A7D0F4882DB2AFFF00124DD3 /* StatTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatTVC.swift; sourceTree = "<group>"; };
+		A7D0F48A2DB2AFFF00124DD3 /* TypeTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTVC.xib; sourceTree = "<group>"; };
+		A7D0F48B2DB2AFFF00124DD3 /* TypeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +165,7 @@
 		A7D0F4482DB28BF100124DD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4792DB2ADB100124DD3 /* PokemonDetail */,
 				A7D0F46F2DB29DF900124DD3 /* Profile */,
 				A7D0F44D2DB28EB300124DD3 /* Home */,
 			);
@@ -179,6 +202,7 @@
 		A7D0F44C2DB28C1B00124DD3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4782DB2ADA200124DD3 /* PokemonDetail */,
 				A7D0F44E2DB28ED100124DD3 /* Home */,
 			);
 			path = ViewModels;
@@ -205,8 +229,8 @@
 		A7D0F4592DB28F9D00124DD3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A7D0F45A2DB28FC100124DD3 /* PokemonListTableViewCell.swift */,
-				A7D0F45B2DB28FC100124DD3 /* PokemonListTableViewCell.xib */,
+				A7D0F45A2DB28FC100124DD3 /* PokemonListTVC.swift */,
+				A7D0F45B2DB28FC100124DD3 /* PokemonListTVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -236,6 +260,63 @@
 				A7D0F4712DB29E0D00124DD3 /* ProfileViewController.xib */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		A7D0F4782DB2ADA200124DD3 /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F47E2DB2ADD500124DD3 /* PokemonDetailViewModel.swift */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		A7D0F4792DB2ADB100124DD3 /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4802DB2AFFF00124DD3 /* MoveTVC */,
+				A7D0F4832DB2AFFF00124DD3 /* PopupMovesView */,
+				A7D0F4862DB2AFFF00124DD3 /* StatTVC */,
+				A7D0F4892DB2AFFF00124DD3 /* TypeTVC */,
+				A7D0F47A2DB2ADC600124DD3 /* PokemonDetailViewController.swift */,
+				A7D0F47B2DB2ADC600124DD3 /* PokemonDetailViewController.xib */,
+			);
+			path = PokemonDetail;
+			sourceTree = "<group>";
+		};
+		A7D0F4802DB2AFFF00124DD3 /* MoveTVC */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4812DB2AFFF00124DD3 /* MoveTVC.xib */,
+				A7D0F4822DB2AFFF00124DD3 /* MoveTVC.swift */,
+			);
+			path = MoveTVC;
+			sourceTree = "<group>";
+		};
+		A7D0F4832DB2AFFF00124DD3 /* PopupMovesView */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4842DB2AFFF00124DD3 /* PopupMovesView.xib */,
+				A7D0F4852DB2AFFF00124DD3 /* PopupMovesView.swift */,
+			);
+			path = PopupMovesView;
+			sourceTree = "<group>";
+		};
+		A7D0F4862DB2AFFF00124DD3 /* StatTVC */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4872DB2AFFF00124DD3 /* StatTVC.xib */,
+				A7D0F4882DB2AFFF00124DD3 /* StatTVC.swift */,
+			);
+			path = StatTVC;
+			sourceTree = "<group>";
+		};
+		A7D0F4892DB2AFFF00124DD3 /* TypeTVC */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F48A2DB2AFFF00124DD3 /* TypeTVC.xib */,
+				A7D0F48B2DB2AFFF00124DD3 /* TypeTVC.swift */,
+			);
+			path = TypeTVC;
 			sourceTree = "<group>";
 		};
 		FF8BBC43DB58BE5D7C04033F /* Frameworks */ = {
@@ -306,11 +387,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D0F4902DB2AFFF00124DD3 /* StatTVC.xib in Resources */,
 				A7D0F4772DB2A58700124DD3 /* MainTabBarController.xib in Resources */,
 				A7D0F4732DB29E0D00124DD3 /* ProfileViewController.xib in Resources */,
-				A7D0F45D2DB28FC100124DD3 /* PokemonListTableViewCell.xib in Resources */,
+				A7D0F45D2DB28FC100124DD3 /* PokemonListTVC.xib in Resources */,
+				A7D0F47D2DB2ADC600124DD3 /* PokemonDetailViewController.xib in Resources */,
 				A7D0F43F2DB28BA800124DD3 /* LaunchScreen.storyboard in Resources */,
+				A7D0F48E2DB2AFFF00124DD3 /* PopupMovesView.xib in Resources */,
+				A7D0F4922DB2AFFF00124DD3 /* TypeTVC.xib in Resources */,
 				A7D0F43C2DB28BA800124DD3 /* Assets.xcassets in Resources */,
+				A7D0F48C2DB2AFFF00124DD3 /* MoveTVC.xib in Resources */,
 				A7D0F43A2DB28BA500124DD3 /* Main.storyboard in Resources */,
 				A7D0F4522DB28F1200124DD3 /* HomeViewController.xib in Resources */,
 			);
@@ -368,8 +454,10 @@
 				A7D0F4642DB291A400124DD3 /* PokemonServiceProtocol.swift in Sources */,
 				A7D0F4602DB2915E00124DD3 /* NetworkManager.swift in Sources */,
 				A7D0F4372DB28BA500124DD3 /* ViewController.swift in Sources */,
-				A7D0F45C2DB28FC100124DD3 /* PokemonListTableViewCell.swift in Sources */,
+				A7D0F45C2DB28FC100124DD3 /* PokemonListTVC.swift in Sources */,
 				A7D0F4562DB28F8200124DD3 /* PokemonModel.swift in Sources */,
+				A7D0F48F2DB2AFFF00124DD3 /* PopupMovesView.swift in Sources */,
+				A7D0F47F2DB2ADD500124DD3 /* PokemonDetailViewModel.swift in Sources */,
 				A7D0F4722DB29E0D00124DD3 /* ProfileViewController.swift in Sources */,
 				A7D0F4582DB28F9800124DD3 /* PokemonDetailModel.swift in Sources */,
 				A7D0F46C2DB2957400124DD3 /* UIImageView+Ext.swift in Sources */,
@@ -378,7 +466,11 @@
 				A7D0F4332DB28BA500124DD3 /* AppDelegate.swift in Sources */,
 				A7D0F4672DB2945A00124DD3 /* UIView+Ext.swift in Sources */,
 				A7D0F4352DB28BA500124DD3 /* SceneDelegate.swift in Sources */,
+				A7D0F4932DB2AFFF00124DD3 /* TypeTVC.swift in Sources */,
+				A7D0F4912DB2AFFF00124DD3 /* StatTVC.swift in Sources */,
 				A7D0F4542DB28F1D00124DD3 /* HomeViewModel.swift in Sources */,
+				A7D0F48D2DB2AFFF00124DD3 /* MoveTVC.swift in Sources */,
+				A7D0F47C2DB2ADC600124DD3 /* PokemonDetailViewController.swift in Sources */,
 				A7D0F4512DB28F1200124DD3 /* HomeViewController.swift in Sources */,
 				A7D0F4762DB2A58700124DD3 /* MainTabBarController.swift in Sources */,
 			);

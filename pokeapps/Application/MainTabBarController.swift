@@ -30,6 +30,11 @@ class MainTabBarController: ButtonBarPagerTabStripViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let homeVC = HomeViewController()
         let profileVC = ProfileViewController()
