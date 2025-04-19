@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="pokeapps" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="cHA-rN-FIF" id="WAK-uw-ghQ"/>
+                <outlet property="logoImageView" destination="ugY-NT-fqf" id="Je4-Rv-uez"/>
+                <outlet property="titleLabel" destination="Y3D-vz-MT5" id="Ur7-qe-RWb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4BG-cQ-TWu">
+                    <rect key="frame" x="20" y="340.33333333333331" width="353" height="196.66666666666669"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="ugY-NT-fqf">
+                            <rect key="frame" x="116.66666666666666" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="7V5-AL-aGc"/>
+                                <constraint firstAttribute="height" constant="120" id="uH3-aq-3vj"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3D-vz-MT5">
+                            <rect key="frame" x="82.000000000000014" y="140" width="189.33333333333337" height="56.666666666666657"/>
+                            <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="42"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cHA-rN-FIF">
+                    <rect key="frame" x="186.66666666666666" y="758" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4BG-cQ-TWu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1Kx-EZ-BUt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4BG-cQ-TWu" secondAttribute="trailing" constant="20" id="2PB-dO-bkR"/>
+                <constraint firstItem="cHA-rN-FIF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="BYI-Tw-ja8"/>
+                <constraint firstItem="4BG-cQ-TWu" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="I15-dJ-8b8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cHA-rN-FIF" secondAttribute="bottom" constant="40" id="eQC-if-Qpz"/>
+            </constraints>
+            <point key="canvasLocation" x="68" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_pokeball" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

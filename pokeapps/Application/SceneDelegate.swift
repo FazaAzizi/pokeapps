@@ -17,24 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        if let _ = UserManager.shared.getCurrentUser() {
-            let mainTabBarController = MainTabBarController()
-            let navigationController = UINavigationController(rootViewController: mainTabBarController)
-            window?.rootViewController = navigationController
-        } else {
-            let loginVC = LoginViewController()
-            let navigationController = UINavigationController(rootViewController: loginVC)
-            window?.rootViewController = navigationController
-        }
-        
+        let splashViewController = SplashViewController()
+        let navigationController = UINavigationController(rootViewController: splashViewController)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
     
+    // Helper method to change root view controller (for logout/login)
     func changeRootViewController(_ viewController: UIViewController, animated: Bool = true) {
         guard let window = self.window else { return }
         
         window.rootViewController = viewController
         
+        // Add animation for smoother transition
         if animated {
             UIView.transition(with: window,
                               duration: 0.3,

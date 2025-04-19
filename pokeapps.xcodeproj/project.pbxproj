@@ -50,6 +50,9 @@
 		A7D0F4BD2DB3B88B00124DD3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4BB2DB3B88B00124DD3 /* LoginViewController.xib */; };
 		A7D0F4C02DB3B89A00124DD3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4BE2DB3B89A00124DD3 /* RegisterViewController.swift */; };
 		A7D0F4C12DB3B89A00124DD3 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4BF2DB3B89A00124DD3 /* RegisterViewController.xib */; };
+		A7D0F4C52DB3BDE700124DD3 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4C42DB3BDE700124DD3 /* SplashViewModel.swift */; };
+		A7D0F4C82DB3BDF700124DD3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4C62DB3BDF700124DD3 /* SplashViewController.swift */; };
+		A7D0F4C92DB3BDF700124DD3 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4C72DB3BDF700124DD3 /* SplashViewController.xib */; };
 		B7DCB7CAF4DD017AA9E6131D /* Pods_pokeapps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF6607ED659EC31527EB0F9 /* Pods_pokeapps.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,9 @@
 		A7D0F4BB2DB3B88B00124DD3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A7D0F4BE2DB3B89A00124DD3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A7D0F4BF2DB3B89A00124DD3 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A7D0F4C42DB3BDE700124DD3 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		A7D0F4C62DB3BDF700124DD3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A7D0F4C72DB3BDF700124DD3 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 		A7D0F4482DB28BF100124DD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4C22DB3BDD200124DD3 /* Splash */,
 				A7D0F4B92DB3B87E00124DD3 /* Login */,
 				A7D0F4B82DB3B87900124DD3 /* Register */,
 				A7D0F4792DB2ADB100124DD3 /* PokemonDetail */,
@@ -224,6 +231,7 @@
 		A7D0F44C2DB28C1B00124DD3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4C32DB3BDD900124DD3 /* Splash */,
 				A7D0F4B12DB3B85000124DD3 /* Register */,
 				A7D0F4B02DB3B84A00124DD3 /* Login */,
 				A7D0F4AF2DB3B84400124DD3 /* Profile */,
@@ -386,6 +394,23 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A7D0F4C22DB3BDD200124DD3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4C62DB3BDF700124DD3 /* SplashViewController.swift */,
+				A7D0F4C72DB3BDF700124DD3 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A7D0F4C32DB3BDD900124DD3 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4C42DB3BDE700124DD3 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		FF8BBC43DB58BE5D7C04033F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +492,7 @@
 				A7D0F4BD2DB3B88B00124DD3 /* LoginViewController.xib in Resources */,
 				A7D0F48C2DB2AFFF00124DD3 /* MoveTVC.xib in Resources */,
 				A7D0F43A2DB28BA500124DD3 /* Main.storyboard in Resources */,
+				A7D0F4C92DB3BDF700124DD3 /* SplashViewController.xib in Resources */,
 				A7D0F4522DB28F1200124DD3 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +561,7 @@
 				A7D0F4722DB29E0D00124DD3 /* ProfileViewController.swift in Sources */,
 				A7D0F4AC2DB3B7E800124DD3 /* UserModel.swift in Sources */,
 				A7D0F4582DB28F9800124DD3 /* PokemonDetailModel.swift in Sources */,
+				A7D0F4C52DB3BDE700124DD3 /* SplashViewModel.swift in Sources */,
 				A7D0F46C2DB2957400124DD3 /* UIImageView+Ext.swift in Sources */,
 				A7D0F4692DB2948D00124DD3 /* UIColor+Ext.swift in Sources */,
 				A7D0F4612DB2915E00124DD3 /* Constants.swift in Sources */,
@@ -545,6 +572,7 @@
 				A7D0F4912DB2AFFF00124DD3 /* StatTVC.swift in Sources */,
 				A7D0F4542DB28F1D00124DD3 /* HomeViewModel.swift in Sources */,
 				A7D0F48D2DB2AFFF00124DD3 /* MoveTVC.swift in Sources */,
+				A7D0F4C82DB3BDF700124DD3 /* SplashViewController.swift in Sources */,
 				A7D0F47C2DB2ADC600124DD3 /* PokemonDetailViewController.swift in Sources */,
 				A7D0F4512DB28F1200124DD3 /* HomeViewController.swift in Sources */,
 				A7D0F4762DB2A58700124DD3 /* MainTabBarController.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,10 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupRealm()
+        
         if #available(iOS 13.0, *) {
+            // iOS 13+ uses SceneDelegate
         } else {
             window = UIWindow(frame: UIScreen.main.bounds)
-            setupRootViewController()
+            let splashViewController = SplashViewController()
+            let navigationController = UINavigationController(rootViewController: splashViewController)
+            window?.rootViewController = navigationController
+            window?.makeKeyAndVisible()
         }
         
         return true
@@ -29,32 +36,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Helper Methods
     
-    func setupRootViewController() {
-        if let _ = UserManager.shared.getCurrentUser() {
-            let mainTabBarController = MainTabBarController()
-            let navigationController = UINavigationController(rootViewController: mainTabBarController)
-            window?.rootViewController = mainTabBarController
-        } else {
-            let loginVC = LoginViewController()
-            let navigationController = UINavigationController(rootViewController: loginVC)
-            window?.rootViewController = navigationController
-        }
-        
-        window?.makeKeyAndVisible()
-    }
-    
-    func changeRootViewController(_ viewController: UIViewController, animated: Bool = true) {
-        guard let window = self.window else { return }
-        
-        window.rootViewController = viewController
-        
-        if animated {
-            UIView.transition(with: window,
-                              duration: 0.3,
-                              options: .transitionCrossDissolve,
-                              animations: nil,
-                              completion: nil)
-        }
+    private func setupRealm() {
+        // Configure Realm
+        let config = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                // Perform migration if needed
+            }
+        )
+        Realm.Configuration.defaultConfiguration = config
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
@@ -62,7 +52,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 
