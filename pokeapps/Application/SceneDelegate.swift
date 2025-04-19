@@ -14,14 +14,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let window = UIWindow(windowScene: windowScene)
-
-        let mainTabBarController = MainTabBarController()
-        let navigation = UINavigationController(rootViewController: mainTabBarController)
-        window.rootViewController = navigation
-        window.makeKeyAndVisible()
-
-        self.window = window
+        
+        window = UIWindow(windowScene: windowScene)
+        
+        if let _ = UserManager.shared.getCurrentUser() {
+            let mainTabBarController = MainTabBarController()
+            let navigationController = UINavigationController(rootViewController: mainTabBarController)
+            window?.rootViewController = navigationController
+        } else {
+            let loginVC = LoginViewController()
+            let navigationController = UINavigationController(rootViewController: loginVC)
+            window?.rootViewController = navigationController
+        }
+        
+        window?.makeKeyAndVisible()
+    }
+    
+    func changeRootViewController(_ viewController: UIViewController, animated: Bool = true) {
+        guard let window = self.window else { return }
+        
+        window.rootViewController = viewController
+        
+        if animated {
+            UIView.transition(with: window,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve,
+                              animations: nil,
+                              completion: nil)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

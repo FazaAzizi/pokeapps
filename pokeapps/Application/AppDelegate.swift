@@ -13,20 +13,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let mainTabBarController = MainTabBarController()
-        let view = UINavigationController(rootViewController: mainTabBarController)
-        self.window?.rootViewController = view
-        self.window?.makeKeyAndVisible()
+        if #available(iOS 13.0, *) {
+        } else {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            setupRootViewController()
+        }
         
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
+        
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+    
+    // MARK: - Helper Methods
+    
+    func setupRootViewController() {
+        if let _ = UserManager.shared.getCurrentUser() {
+            let mainTabBarController = MainTabBarController()
+            let navigationController = UINavigationController(rootViewController: mainTabBarController)
+            window?.rootViewController = mainTabBarController
+        } else {
+            let loginVC = LoginViewController()
+            let navigationController = UINavigationController(rootViewController: loginVC)
+            window?.rootViewController = navigationController
+        }
+        
+        window?.makeKeyAndVisible()
+    }
+    
+    func changeRootViewController(_ viewController: UIViewController, animated: Bool = true) {
+        guard let window = self.window else { return }
+        
+        window.rootViewController = viewController
+        
+        if animated {
+            UIView.transition(with: window,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve,
+                              animations: nil,
+                              completion: nil)
+        }
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {

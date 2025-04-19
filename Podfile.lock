@@ -2,6 +2,11 @@ PODS:
   - Alamofire (5.10.2)
   - Kingfisher (8.3.1)
   - MBProgressHUD (1.2.0)
+  - Realm (10.33.0):
+    - Realm/Headers (= 10.33.0)
+  - Realm/Headers (10.33.0)
+  - RealmSwift (10.33.0):
+    - Realm (= 10.33.0)
   - RxCocoa (6.9.0):
     - RxRelay (= 6.9.0)
     - RxSwift (= 6.9.0)
@@ -14,6 +19,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.0)
   - Kingfisher
   - MBProgressHUD
+  - RealmSwift (~> 10.33.0)
   - RxCocoa
   - RxSwift
   - XLPagerTabStrip (~> 8.0)
@@ -23,6 +29,8 @@ SPEC REPOS:
     - Alamofire
     - Kingfisher
     - MBProgressHUD
+    - Realm
+    - RealmSwift
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -32,11 +40,13 @@ SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   Kingfisher: 3204d23de16b5ea53541c44ca5a8efb55741dec3
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Realm: d4f810e161fa2c2c589b9860b6eb09238deacd73
+  RealmSwift: cef9946f09f2333a8f2ac8bac4f8de52fb9f5ac3
   RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
   RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
   RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 4a778948442fa8767e34350457e2214b5f86b89f
+PODFILE CHECKSUM: 735ea758ec4d260ec4a51c5ff6d3db4986f3172f
 
 COCOAPODS: 1.16.2

@@ -41,6 +41,15 @@
 		A7D0F4912DB2AFFF00124DD3 /* StatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4882DB2AFFF00124DD3 /* StatTVC.swift */; };
 		A7D0F4922DB2AFFF00124DD3 /* TypeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F48A2DB2AFFF00124DD3 /* TypeTVC.xib */; };
 		A7D0F4932DB2AFFF00124DD3 /* TypeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F48B2DB2AFFF00124DD3 /* TypeTVC.swift */; };
+		A7D0F4AC2DB3B7E800124DD3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4AB2DB3B7E800124DD3 /* UserModel.swift */; };
+		A7D0F4AE2DB3B82C00124DD3 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4AD2DB3B82C00124DD3 /* UserManager.swift */; };
+		A7D0F4B32DB3B85C00124DD3 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4B22DB3B85C00124DD3 /* RegisterViewModel.swift */; };
+		A7D0F4B52DB3B86500124DD3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4B42DB3B86500124DD3 /* LoginViewModel.swift */; };
+		A7D0F4B72DB3B86F00124DD3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4B62DB3B86F00124DD3 /* ProfileViewModel.swift */; };
+		A7D0F4BC2DB3B88B00124DD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4BA2DB3B88B00124DD3 /* LoginViewController.swift */; };
+		A7D0F4BD2DB3B88B00124DD3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4BB2DB3B88B00124DD3 /* LoginViewController.xib */; };
+		A7D0F4C02DB3B89A00124DD3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F4BE2DB3B89A00124DD3 /* RegisterViewController.swift */; };
+		A7D0F4C12DB3B89A00124DD3 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D0F4BF2DB3B89A00124DD3 /* RegisterViewController.xib */; };
 		B7DCB7CAF4DD017AA9E6131D /* Pods_pokeapps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF6607ED659EC31527EB0F9 /* Pods_pokeapps.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +93,15 @@
 		A7D0F4882DB2AFFF00124DD3 /* StatTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatTVC.swift; sourceTree = "<group>"; };
 		A7D0F48A2DB2AFFF00124DD3 /* TypeTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeTVC.xib; sourceTree = "<group>"; };
 		A7D0F48B2DB2AFFF00124DD3 /* TypeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeTVC.swift; sourceTree = "<group>"; };
+		A7D0F4AB2DB3B7E800124DD3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A7D0F4AD2DB3B82C00124DD3 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		A7D0F4B22DB3B85C00124DD3 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A7D0F4B42DB3B86500124DD3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7D0F4B62DB3B86F00124DD3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A7D0F4BA2DB3B88B00124DD3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A7D0F4BB2DB3B88B00124DD3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A7D0F4BE2DB3B89A00124DD3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A7D0F4BF2DB3B89A00124DD3 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +176,7 @@
 			children = (
 				A7D0F4552DB28F8200124DD3 /* PokemonModel.swift */,
 				A7D0F4572DB28F9800124DD3 /* PokemonDetailModel.swift */,
+				A7D0F4AB2DB3B7E800124DD3 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +184,8 @@
 		A7D0F4482DB28BF100124DD3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4B92DB3B87E00124DD3 /* Login */,
+				A7D0F4B82DB3B87900124DD3 /* Register */,
 				A7D0F4792DB2ADB100124DD3 /* PokemonDetail */,
 				A7D0F46F2DB29DF900124DD3 /* Profile */,
 				A7D0F44D2DB28EB300124DD3 /* Home */,
@@ -185,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D0F4622DB2917100124DD3 /* Network */,
+				A7D0F4AD2DB3B82C00124DD3 /* UserManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -202,6 +224,9 @@
 		A7D0F44C2DB28C1B00124DD3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A7D0F4B12DB3B85000124DD3 /* Register */,
+				A7D0F4B02DB3B84A00124DD3 /* Login */,
+				A7D0F4AF2DB3B84400124DD3 /* Profile */,
 				A7D0F4782DB2ADA200124DD3 /* PokemonDetail */,
 				A7D0F44E2DB28ED100124DD3 /* Home */,
 			);
@@ -319,6 +344,48 @@
 			path = TypeTVC;
 			sourceTree = "<group>";
 		};
+		A7D0F4AF2DB3B84400124DD3 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4B62DB3B86F00124DD3 /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A7D0F4B02DB3B84A00124DD3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4B42DB3B86500124DD3 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A7D0F4B12DB3B85000124DD3 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4B22DB3B85C00124DD3 /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A7D0F4B82DB3B87900124DD3 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4BE2DB3B89A00124DD3 /* RegisterViewController.swift */,
+				A7D0F4BF2DB3B89A00124DD3 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A7D0F4B92DB3B87E00124DD3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0F4BA2DB3B88B00124DD3 /* LoginViewController.swift */,
+				A7D0F4BB2DB3B88B00124DD3 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		FF8BBC43DB58BE5D7C04033F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +463,8 @@
 				A7D0F48E2DB2AFFF00124DD3 /* PopupMovesView.xib in Resources */,
 				A7D0F4922DB2AFFF00124DD3 /* TypeTVC.xib in Resources */,
 				A7D0F43C2DB28BA800124DD3 /* Assets.xcassets in Resources */,
+				A7D0F4C12DB3B89A00124DD3 /* RegisterViewController.xib in Resources */,
+				A7D0F4BD2DB3B88B00124DD3 /* LoginViewController.xib in Resources */,
 				A7D0F48C2DB2AFFF00124DD3 /* MoveTVC.xib in Resources */,
 				A7D0F43A2DB28BA500124DD3 /* Main.storyboard in Resources */,
 				A7D0F4522DB28F1200124DD3 /* HomeViewController.xib in Resources */,
@@ -451,14 +520,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7D0F4BC2DB3B88B00124DD3 /* LoginViewController.swift in Sources */,
 				A7D0F4642DB291A400124DD3 /* PokemonServiceProtocol.swift in Sources */,
+				A7D0F4B32DB3B85C00124DD3 /* RegisterViewModel.swift in Sources */,
 				A7D0F4602DB2915E00124DD3 /* NetworkManager.swift in Sources */,
+				A7D0F4B72DB3B86F00124DD3 /* ProfileViewModel.swift in Sources */,
 				A7D0F4372DB28BA500124DD3 /* ViewController.swift in Sources */,
 				A7D0F45C2DB28FC100124DD3 /* PokemonListTVC.swift in Sources */,
 				A7D0F4562DB28F8200124DD3 /* PokemonModel.swift in Sources */,
 				A7D0F48F2DB2AFFF00124DD3 /* PopupMovesView.swift in Sources */,
+				A7D0F4AE2DB3B82C00124DD3 /* UserManager.swift in Sources */,
+				A7D0F4B52DB3B86500124DD3 /* LoginViewModel.swift in Sources */,
 				A7D0F47F2DB2ADD500124DD3 /* PokemonDetailViewModel.swift in Sources */,
 				A7D0F4722DB29E0D00124DD3 /* ProfileViewController.swift in Sources */,
+				A7D0F4AC2DB3B7E800124DD3 /* UserModel.swift in Sources */,
 				A7D0F4582DB28F9800124DD3 /* PokemonDetailModel.swift in Sources */,
 				A7D0F46C2DB2957400124DD3 /* UIImageView+Ext.swift in Sources */,
 				A7D0F4692DB2948D00124DD3 /* UIColor+Ext.swift in Sources */,
@@ -473,6 +548,7 @@
 				A7D0F47C2DB2ADC600124DD3 /* PokemonDetailViewController.swift in Sources */,
 				A7D0F4512DB28F1200124DD3 /* HomeViewController.swift in Sources */,
 				A7D0F4762DB2A58700124DD3 /* MainTabBarController.swift in Sources */,
+				A7D0F4C02DB3B89A00124DD3 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
